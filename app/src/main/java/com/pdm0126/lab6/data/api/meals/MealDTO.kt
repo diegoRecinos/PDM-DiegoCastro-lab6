@@ -5,11 +5,11 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class MealDTO(
-    val idMeal: String,
-    val strMeal: String,
-    val strCategory: String,
-    val strArea: String,
-    val strMealThumb: String
+    val idMeal: String?,
+    val strMeal: String?,
+    val strCategory: String?,
+    val strArea: String?,
+    val strMealThumb: String?
 )
 
 

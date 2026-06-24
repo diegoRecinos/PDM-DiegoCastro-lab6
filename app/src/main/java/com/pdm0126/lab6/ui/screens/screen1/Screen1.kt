@@ -38,8 +38,8 @@ fun Screen1(
             LazyColumn {
                 items(viewModel.posts) { post ->
 
-                    Text(text = post.strMeal, style = MaterialTheme.typography.titleLarge)
-                    Text(text = post.strCategory, style = MaterialTheme.typography.bodyMedium)
+                    post.strMeal?.let { Text(text = it, style = MaterialTheme.typography.titleLarge) }
+                    post.strCategory?.let { Text(text = it, style = MaterialTheme.typography.bodyMedium) }
 
                     AsyncImage(
                         model = post.strMealThumb,
